@@ -23,6 +23,11 @@ Você pode usar o comando como:
 
 * O arquivo a ser executado deve ser `deploy.sh`, certifique-se que possui permissão de execução.
 
+### Configurações
+* crie o arquivo config.sh e inclua o diretório de sua aplicação.
+
+* coloque no `crontabe` do seu servidor, homologação e/ou produção, a chamada ao arquivo `deploy.sh`.
+
 ### Observações
 * O Script só roda em ambientes de homologação ou produção.
 * O Script só roda no branch diferente de `master`.
