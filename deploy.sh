@@ -3,12 +3,12 @@
 # descobrindo o diretório completo
 DIR_SCRIPT=${PWD}"/"$(dirname $0)
 
+# variáveis globais
+ULTIMA_TAG=''
+
 # includes
 source $DIR_SCRIPT"/"config.sh
 source $DIR_SCRIPT"/"funcoes.sh
-
-# variáveis globair
-ULTIMA_TAG=''
 
 cd $DIR_APLICACAO
 
