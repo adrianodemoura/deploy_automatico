@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# descobrindo o diretório completo
+DIR_SCRIPT=${PWD}"/"$(dirname $0)
+
 # includes
-source "config.sh"
-source "funcoes.sh"
+source $DIR_SCRIPT"/"config.sh
+source $DIR_SCRIPT"/"funcoes.sh
 
 # variáveis globair
 ULTIMA_TAG=''
