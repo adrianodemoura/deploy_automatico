@@ -47,10 +47,10 @@ checkout_para_ultima_tag()
 		exit;
 	fi
 
-	if [ $TEM_DIFERENCA = 0 ]; then
-		echo "Nenhuma TAG foi criada !"
-		exit;
-	fi
+	#if [ $TEM_DIFERENCA = 0 ]; then
+	#	echo "Nenhuma TAG foi criada !"
+	#	exit;
+	#fi
 
 	ULTIMA_TAG=`git describe --tags $(git rev-list --tags --max-count=1)`
 
