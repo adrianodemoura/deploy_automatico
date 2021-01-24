@@ -3,7 +3,7 @@
 
 checa_ambiente()
 {
-	if [ $AMBIENTE != 'HOMOLOGACAO' -o $AMBIENTE != 'PRODUCAO' ]; then
+	if [ $AMBIENTE != 'HOMOLOGACAO' -a $AMBIENTE != 'PRODUCAO' ]; then
 		echo "Este script NÃO pode ser executado no ambiente $AMBIENTE"
 		exit
 	fi
