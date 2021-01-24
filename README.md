@@ -25,3 +25,4 @@ Você pode usar o comando como:
 
 ### Observações
 * O Script só roda em ambientes de homologação ou produção.
+* O Script só roda no branch diferente de `master`.

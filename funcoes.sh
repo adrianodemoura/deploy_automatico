@@ -48,9 +48,9 @@ verifica_diferenca_entre_master_e_ultima_tag()
 
 checkout_para_ultima_tag()
 {
-	if [ AMBIENTE != 'HOMOLOGACAO' -o AMBIENTE != 'PRODUCAO' ]; then
+	if [ AMBIENTE != 'HOMOLOGACAO' -a AMBIENTE != 'PRODUCAO' ]; then
 		echo "a TAG só pode ser selecionada no ambiente de homologação e/ou produção."
-		exit 0;
+		exit;
 	fi
 
 	ULTIMA_TAG=`git describe --tags $(git rev-list --tags --max-count=1)`
