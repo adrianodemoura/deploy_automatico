@@ -5,7 +5,7 @@ Este script irá manter, de maneira automática, as versões de sua aplicação,
 ```
 v1.0.1
 v1.0.2
-v1.0.n
+v1.0.23 ...
 ```
 
 O Script irá usar o `GIT` para criar as novas `TAGs` assim que o código é alterado.
