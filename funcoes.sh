@@ -47,6 +47,8 @@ checkout_para_ultima_tag()
 		exit;
 	fi
 
+	echo TEM_DIFERENCA
+
 	ULTIMA_TAG=`git describe --tags $(git rev-list --tags --max-count=1)`
 
 	git checkout $ULTIMA_TAG > /dev/null 2>&1
