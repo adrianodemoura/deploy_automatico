@@ -8,12 +8,6 @@ checa_ambiente()
 		exit
 	fi
 
-	BRANCH_MASTER_ATIVO=`git branch | grep "* master" | wc -l`
-	if [ $BRANCH_MASTER_ATIVO != 0 ]; then
-		echo "Este script NÃO pode ser executado a partir do branch MASTER !"
-		exit
-	fi
-
 	ARQUIVOS_PENDENTES=`git diff --stat | wc -l`
 	if [ $ARQUIVOS_PENDENTES != 0 ]; then
 		echo "Execute o commit antes de fazer o deploy para homologação !"
